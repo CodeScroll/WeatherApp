@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical"
+        tools:ignore="DisableBaselineAlignment">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </ListView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:visibility="visible"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="125dp"
+                android:layout_width="125dp"
+                app:srcCompat="@mipmap/user"
+                android:id="@+id/imgUser"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                tools:ignore="UnusedAttribute">
+
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:hint="Comments"
+                    android:background="#f3f3f3"
+                    android:textColor="@android:color/holo_green_light"
+                    android:paddingLeft="5dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                    android:id="@+id/txtName" />
+
+
+                <Button android:layout_width="190dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:background="#13b586"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:text="SUBMIT"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:id="@+id/btnDb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+
